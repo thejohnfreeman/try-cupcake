@@ -6,7 +6,7 @@
 
 namespace seedgen {
 
-std::string random();
+SEEDGEN_EXPORT std::string random();
 
 }
 
