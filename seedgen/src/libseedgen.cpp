@@ -2,8 +2,8 @@
 
 namespace seedgen {
 
-std::string random() {
-    return "hello, world!";
+ripple::Seed random() {
+    return ripple::randomSeed();
 }
 
 }

@@ -2,11 +2,12 @@
 #define SEEDGEN_HPP
 
 #include <string>
+#include <ripple/protocol/Seed.h>
 #include <seedgen/export.hpp>
 
 namespace seedgen {
 
-SEEDGEN_EXPORT std::string random();
+SEEDGEN_EXPORT ripple::Seed random();
 
 }
 
