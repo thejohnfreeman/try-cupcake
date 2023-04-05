@@ -4,5 +4,5 @@
 #include <seedgen/seedgen.hpp>
 
 TEST_CASE("test case please ignore") {
-    CHECK(true);
+    CHECK(ripple::toBase58(seedgen::random())[0] == 's');
 }
