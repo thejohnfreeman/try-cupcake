@@ -2,7 +2,8 @@
 
 namespace seedgen {
 
-void seedgen() {
+std::string random() {
+    return "hello, world!";
 }
 
 }
