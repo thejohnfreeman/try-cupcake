@@ -1,8 +1,11 @@
+#include <string>
 #include <cstdio>
 
-#include <example/example.hpp>
+#include <seedgen/seedgen.hpp>
 
 int main(int argc, const char** argv) {
-    example::example();
+    ripple::Seed seed = seedgen::random();
+    std::string str = ripple::toBase58(seed);
+    std::printf("%s\n", str.c_str());
     return 0;
 }

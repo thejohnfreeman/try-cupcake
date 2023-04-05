@@ -12,7 +12,10 @@ class Example(ConanFile):
     options = {'shared': [True, False], 'fPIC': [True, False]}
     default_options = {'shared': False, 'fPIC': True}
 
-    requires = ['cupcake/0.1.0']
+    requires = [
+        'cupcake/0.1.0',
+        'seedgen/0.1.0',
+    ]
     test_requires = ['doctest/2.4.8']
     generators = ['CMakeDeps', 'CMakeToolchain']
 
