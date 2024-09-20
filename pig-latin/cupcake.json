@@ -1,0 +1,46 @@
+{
+  "project": {
+    "name": "pig-latin",
+    "version": "0.1.0"
+  },
+  "libraries": [
+    {
+      "name": "pig-latin",
+      "links": [
+        "${PROJECT_NAME}.imports.main"
+      ]
+    }
+  ],
+  "executables": [
+    {
+      "name": "pig-latin",
+      "links": [
+        "${PROJECT_NAME}.imports.main",
+        "pig-latin.library"
+      ]
+    }
+  ],
+  "imports": [
+    {
+      "name": "doctest",
+      "version": "2.4.8",
+      "reference": "doctest/2.4.8",
+      "file": "doctest",
+      "targets": [
+        "doctest::doctest"
+      ],
+      "groups": [
+        "test"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "pig-latin",
+      "links": [
+        "${PROJECT_NAME}.imports.test",
+        "pig-latin.library"
+      ]
+    }
+  ]
+}
