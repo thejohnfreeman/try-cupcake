@@ -2,10 +2,12 @@
 #define PIG_LATIN_PIG_LATIN_HPP
 
 #include <pig-latin/export.hpp>
+#include <string>
 
 namespace pig_latin {
 
-PIG_LATIN_EXPORT void pig_latin();
+/** Translate one word to Pig Latin. */
+std::string word(std::string const& before);
 
 }
 
