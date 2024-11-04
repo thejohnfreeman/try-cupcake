@@ -4,5 +4,5 @@
 #include <pig-latin/pig-latin.hpp>
 
 TEST_CASE("test case please ignore") {
-    CHECK(true);
+    CHECK(pig_latin::word("latin") == "atinlay");
 }
