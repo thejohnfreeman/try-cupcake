@@ -32,6 +32,24 @@
       "groups": [
         "test"
       ]
+    },
+    {
+      "name": "fmt",
+      "version": "11.0.2",
+      "reference": "fmt/11.0.2",
+      "groups": [
+        "main"
+      ],
+      "file": "fmt",
+      "targets": [
+        "fmt::fmt"
+      ],
+      "components": [
+        {
+          "name": "fmt::_fmt",
+          "target": "fmt::fmt"
+        }
+      ]
     }
   ],
   "tests": [
