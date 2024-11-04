@@ -7,7 +7,7 @@
 namespace pig_latin {
 
 /** Translate one word to Pig Latin. */
-std::string word(std::string const& before);
+PIG_LATIN_EXPORT std::string word(std::string const& before);
 
 }
 
