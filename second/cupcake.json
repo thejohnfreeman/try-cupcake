@@ -1,0 +1,46 @@
+{
+  "project": {
+    "name": "second",
+    "version": "0.1.0"
+  },
+  "libraries": [
+    {
+      "name": "second",
+      "links": [
+        "${PROJECT_NAME}.imports.main"
+      ]
+    }
+  ],
+  "executables": [
+    {
+      "name": "second",
+      "links": [
+        "${PROJECT_NAME}.imports.main",
+        "second.library"
+      ]
+    }
+  ],
+  "imports": [
+    {
+      "name": "doctest",
+      "version": "2.4.8",
+      "reference": "doctest/2.4.8",
+      "file": "doctest",
+      "targets": [
+        "doctest::doctest"
+      ],
+      "groups": [
+        "test"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "second",
+      "links": [
+        "${PROJECT_NAME}.imports.test",
+        "second.library"
+      ]
+    }
+  ]
+}
