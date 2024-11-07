@@ -3,20 +3,11 @@
     "name": "second",
     "version": "0.1.0"
   },
-  "libraries": [
-    {
-      "name": "second",
-      "links": [
-        "${PROJECT_NAME}.imports.main"
-      ]
-    }
-  ],
   "executables": [
     {
       "name": "second",
       "links": [
-        "${PROJECT_NAME}.imports.main",
-        "second.library"
+        "${PROJECT_NAME}.imports.main"
       ]
     }
   ],
@@ -31,15 +22,6 @@
       ],
       "groups": [
         "test"
-      ]
-    }
-  ],
-  "tests": [
-    {
-      "name": "second",
-      "links": [
-        "${PROJECT_NAME}.imports.test",
-        "second.library"
       ]
     }
   ]
