@@ -23,6 +23,43 @@
       "groups": [
         "test"
       ]
+    },
+    {
+      "name": "pig-latin",
+      "version": "0.1.0",
+      "reference": "pig-latin/0.1.0",
+      "groups": [
+        "main"
+      ],
+      "file": "pig-latin",
+      "targets": [
+        "pig-latin::libraries"
+      ],
+      "root": {
+        "name": "pig-latin::pig-latin",
+        "target": "pig-latin::pig-latin"
+      },
+      "components": [
+        {
+          "name": "pig-latin::imports.main",
+          "target": "pig-latin::imports::main",
+          "aliases": [
+            "pig-latin::i::main"
+          ]
+        },
+        {
+          "name": "pig-latin::libraries.pig-latin",
+          "target": "pig-latin::libraries::pig-latin",
+          "aliases": [
+            "pig-latin::l::pig-latin",
+            "pig-latin::library"
+          ]
+        },
+        {
+          "name": "pig-latin::libraries",
+          "target": "pig-latin::libraries"
+        }
+      ]
     }
   ]
 }

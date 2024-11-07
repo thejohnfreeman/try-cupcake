@@ -1,8 +1,8 @@
 #include <cstdio>
 
-#include <second/second.hpp>
+#include <pig-latin/pig-latin.hpp>
 
 int main(int argc, const char** argv) {
-    second::second();
+    std::printf("%s\n", pig_latin::word("latin").c_str());
     return 0;
 }
