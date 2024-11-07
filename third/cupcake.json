@@ -32,6 +32,43 @@
       "groups": [
         "test"
       ]
+    },
+    {
+      "name": "second",
+      "version": "0.1.0",
+      "reference": "second/0.1.0",
+      "groups": [
+        "main"
+      ],
+      "file": "second",
+      "targets": [
+        "second::libraries"
+      ],
+      "root": {
+        "name": "second::second",
+        "target": "second::second"
+      },
+      "components": [
+        {
+          "name": "second::imports.main",
+          "target": "second::imports::main",
+          "aliases": [
+            "second::i::main"
+          ]
+        },
+        {
+          "name": "second::libraries.second",
+          "target": "second::libraries::second",
+          "aliases": [
+            "second::l::second",
+            "second::library"
+          ]
+        },
+        {
+          "name": "second::libraries",
+          "target": "second::libraries"
+        }
+      ]
     }
   ],
   "tests": [
